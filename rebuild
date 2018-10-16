@@ -7,6 +7,7 @@ set -x
 
 rm -rf ${THISDIR}/build
 rm -rf ${THISDIR}/mypackage/__pycache__/
+rm -f ${THISDIR}/mypackage/mycymod.cpp
 rm -f ${THISDIR}/mypackage/mycymod.cpython-*-darwin.so
 
 python ${THISDIR}/setup.py build_ext --inplace
