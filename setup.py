@@ -93,7 +93,7 @@ setup(name='language-level',
         )],
         nthreads=psutil.cpu_count(),
         language="c++",
-        compiler_directives=dict(language_level=2,
+        compiler_directives=dict(language_level=3,
                                  infer_types=True,
                                  embedsignature=True)
     )
