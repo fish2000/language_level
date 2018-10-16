@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -x
+
+: ${THISDIR:=$(cd $(dirname ${BASH_SOURCE[0]}) && pwd)}
+: ${PROJECT:=$(dirname $THISDIR)}
+
+rm -rf ${THISDIR}/build
+rm -rf ${THISDIR}/mypackage/__pycache__/
+rm -f ${THISDIR}/mypackage/mycymod.cpython-*-darwin.so
+
+python ${THISDIR}/setup.py build_ext --inplace
+
+set +x
