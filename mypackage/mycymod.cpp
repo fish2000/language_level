@@ -1360,7 +1360,7 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 /* Module declarations from 'libcpp.string' */
 
-/* Module declarations from 'mypackage.ext.mycppwrappers' */
+/* Module declarations from 'mypackage.ext.halide.mycppwrappers' */
 
 /* Module declarations from 'mypackage.mycymod' */
 static PyTypeObject *__pyx_ptype_9mypackage_7mycymod_Outputs = 0;
@@ -1564,7 +1564,7 @@ static PyObject *__pyx_codeobj__7;
 /* Late includes */
 
 /* "mypackage/mycymod.pyx":13
- * from ext.mycppwrappers cimport Outputs as HalOutputs
+ * from ext.halide.mycppwrappers cimport Outputs as HalOutputs
  * 
  * cdef inline bytes u8encode(object source):             # <<<<<<<<<<<<<<
  *     return bytes(source, encoding='UTF-8')
@@ -1604,7 +1604,7 @@ static CYTHON_INLINE PyObject *__pyx_f_9mypackage_7mycymod_u8encode(PyObject *__
   goto __pyx_L0;
 
   /* "mypackage/mycymod.pyx":13
- * from ext.mycppwrappers cimport Outputs as HalOutputs
+ * from ext.halide.mycppwrappers cimport Outputs as HalOutputs
  * 
  * cdef inline bytes u8encode(object source):             # <<<<<<<<<<<<<<
  *     return bytes(source, encoding='UTF-8')

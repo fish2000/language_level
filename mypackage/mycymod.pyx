@@ -8,7 +8,7 @@ cimport cython
 from libc.stdint cimport *
 from libcpp.string cimport string
 
-from ext.mycppwrappers cimport Outputs as HalOutputs
+from ext.halide.mycppwrappers cimport Outputs as HalOutputs
 
 cdef inline bytes u8encode(object source):
     return bytes(source, encoding='UTF-8')

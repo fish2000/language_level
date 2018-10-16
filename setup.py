@@ -22,13 +22,7 @@ else:
     print(f"import: module {numpy.__name__} found")
 
 # VERSION & METADATA
-__version__ = "<undefined>"
-exec(compile(
-    open(os.path.join(
-        os.path.dirname(__file__),
-        '__version__.py')).read(),
-        '__version__.py', 'exec'))
-
+__version__ = '0.1.1'
 long_description = """ Test for cinclude bug with language_level=3 """
 
 classifiers = [
@@ -99,7 +93,7 @@ setup(name='language-level',
         )],
         nthreads=psutil.cpu_count(),
         language="c++",
-        compiler_directives=dict(language_level=3,
+        compiler_directives=dict(language_level=2,
                                  infer_types=True,
                                  embedsignature=True)
     )
